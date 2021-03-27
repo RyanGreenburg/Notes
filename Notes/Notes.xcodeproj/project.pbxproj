@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		62561EBC260ED70300492E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EBB260ED70300492E15 /* AppDelegate.swift */; };
 		62561EBE260ED70300492E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EBD260ED70300492E15 /* SceneDelegate.swift */; };
-		62561EC0260ED70300492E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EBF260ED70300492E15 /* ViewController.swift */; };
 		62561EC3260ED70300492E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62561EC1260ED70300492E15 /* Main.storyboard */; };
 		62561EC5260ED70500492E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62561EC4260ED70500492E15 /* Assets.xcassets */; };
 		62561EC8260ED70500492E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62561EC6260ED70500492E15 /* LaunchScreen.storyboard */; };
 		62561ED6260EE19200492E15 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561ED5260EE19200492E15 /* Note.swift */; };
 		62561EDB260EE20500492E15 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EDA260EE20500492E15 /* NoteController.swift */; };
+		62561EE3260EE3B600492E15 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EE2260EE3B600492E15 /* NotesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62561EB8260ED70300492E15 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62561EBB260ED70300492E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62561EBD260ED70300492E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62561EBF260ED70300492E15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62561EC2260ED70300492E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62561EC4260ED70500492E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62561EC7260ED70500492E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62561EC9260ED70500492E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62561ED5260EE19200492E15 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		62561EDA260EE20500492E15 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		62561EE2260EE3B600492E15 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 		62561ED3260EE14500492E15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62561EBF260ED70300492E15 /* ViewController.swift */,
 				62561EC1260ED70300492E15 /* Main.storyboard */,
+				62561EE2260EE3B600492E15 /* NotesListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62561EC0260ED70300492E15 /* ViewController.swift in Sources */,
 				62561EBC260ED70300492E15 /* AppDelegate.swift in Sources */,
 				62561EBE260ED70300492E15 /* SceneDelegate.swift in Sources */,
+				62561EE3260EE3B600492E15 /* NotesListViewController.swift in Sources */,
 				62561ED6260EE19200492E15 /* Note.swift in Sources */,
 				62561EDB260EE20500492E15 /* NoteController.swift in Sources */,
 			);

@@ -21,6 +21,6 @@ class Note {
 
 extension Note: Equatable {
     static func == (lhs: Note, rhs: Note) -> Bool {
-        lhs.title == rhs.title && lhs.body == rhs.body && lhs.timestamp == rhs.timestamp
+        return lhs.title == rhs.title && lhs.body == rhs.body && lhs.timestamp == rhs.timestamp
     }
 }
