@@ -14,6 +14,7 @@
 		62561EC5260ED70500492E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62561EC4260ED70500492E15 /* Assets.xcassets */; };
 		62561EC8260ED70500492E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62561EC6260ED70500492E15 /* LaunchScreen.storyboard */; };
 		62561ED6260EE19200492E15 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561ED5260EE19200492E15 /* Note.swift */; };
+		62561EDB260EE20500492E15 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EDA260EE20500492E15 /* NoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		62561EC7260ED70500492E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62561EC9260ED70500492E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62561ED5260EE19200492E15 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		62561EDA260EE20500492E15 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				62561ED8260EE1E800492E15 /* Models */,
+				62561EDE260EE21F00492E15 /* ModelControllers */,
 				62561ED3260EE14500492E15 /* Views */,
 				62561ED1260EE13900492E15 /* Resources */,
 			);
@@ -92,6 +95,14 @@
 				62561ED5260EE19200492E15 /* Note.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		62561EDE260EE21F00492E15 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62561EDA260EE20500492E15 /* NoteController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				62561EBC260ED70300492E15 /* AppDelegate.swift in Sources */,
 				62561EBE260ED70300492E15 /* SceneDelegate.swift in Sources */,
 				62561ED6260EE19200492E15 /* Note.swift in Sources */,
+				62561EDB260EE20500492E15 /* NoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
