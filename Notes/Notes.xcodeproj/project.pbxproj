@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6250831C2639F14C00A9B355 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250831B2639F14C00A9B355 /* NoteDetailViewController.swift */; };
+		625083202639FC5800A9B355 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250831F2639FC5800A9B355 /* Date+Extension.swift */; };
 		62561EBC260ED70300492E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EBB260ED70300492E15 /* AppDelegate.swift */; };
 		62561EBE260ED70300492E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62561EBD260ED70300492E15 /* SceneDelegate.swift */; };
 		62561EC3260ED70300492E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62561EC1260ED70300492E15 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6250831B2639F14C00A9B355 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		6250831F2639FC5800A9B355 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		62561EB8260ED70300492E15 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62561EBB260ED70300492E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62561EBD260ED70300492E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625083222639FC5D00A9B355 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6250831F2639FC5800A9B355 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		62561EAF260ED70300492E15 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +75,7 @@
 				62561ED8260EE1E800492E15 /* Models */,
 				62561EDE260EE21F00492E15 /* ModelControllers */,
 				62561ED3260EE14500492E15 /* Views */,
+				625083222639FC5D00A9B355 /* Extensions */,
 				62561ED1260EE13900492E15 /* Resources */,
 			);
 			path = Notes;
@@ -85,6 +98,7 @@
 			children = (
 				62561EC1260ED70300492E15 /* Main.storyboard */,
 				62561EE2260EE3B600492E15 /* NotesListViewController.swift */,
+				6250831B2639F14C00A9B355 /* NoteDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,8 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				62561EBC260ED70300492E15 /* AppDelegate.swift in Sources */,
+				6250831C2639F14C00A9B355 /* NoteDetailViewController.swift in Sources */,
 				62561EBE260ED70300492E15 /* SceneDelegate.swift in Sources */,
 				62561EE3260EE3B600492E15 /* NotesListViewController.swift in Sources */,
+				625083202639FC5800A9B355 /* Date+Extension.swift in Sources */,
 				62561ED6260EE19200492E15 /* Note.swift in Sources */,
 				62561EDB260EE20500492E15 /* NoteController.swift in Sources */,
 			);
@@ -328,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Notes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Notes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

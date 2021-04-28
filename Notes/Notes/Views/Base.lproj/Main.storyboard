@@ -74,17 +74,53 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Note Detail View Controller-->
         <scene sceneID="gof-Or-K0j">
             <objects>
-                <viewController id="TrH-U6-dGU" sceneMemberID="viewController">
+                <viewController id="TrH-U6-dGU" customClass="NoteDetailViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UvW-TF-gXs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EXF-eV-VKR">
+                                <rect key="frame" x="8" y="96" width="398" height="766"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knc-t2-GME">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1f-7E-yoq">
+                                        <rect key="frame" x="0.0" y="28.5" width="398" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dg8-1D-Wo2">
+                                        <rect key="frame" x="0.0" y="70.5" width="398" height="695.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="X9D-l3-4ne"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X9D-l3-4ne" firstAttribute="trailing" secondItem="EXF-eV-VKR" secondAttribute="trailing" constant="8" id="5VO-SH-WXf"/>
+                            <constraint firstItem="X9D-l3-4ne" firstAttribute="bottom" secondItem="EXF-eV-VKR" secondAttribute="bottom" id="TiE-zo-Qad"/>
+                            <constraint firstItem="EXF-eV-VKR" firstAttribute="leading" secondItem="X9D-l3-4ne" secondAttribute="leading" constant="8" id="pu0-gv-k6r"/>
+                            <constraint firstItem="EXF-eV-VKR" firstAttribute="top" secondItem="X9D-l3-4ne" secondAttribute="top" constant="8" id="wCI-e9-N9A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qd1-ln-XnC"/>
+                    <connections>
+                        <outlet property="bodyTextView" destination="Dg8-1D-Wo2" id="vJT-K8-0Lg"/>
+                        <outlet property="timestampLabel" destination="knc-t2-GME" id="u6x-Q3-WFO"/>
+                        <outlet property="titleTextField" destination="X1f-7E-yoq" id="sab-QK-jdi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6W-St-Y0c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +149,9 @@
         <segue reference="O5E-GJ-nWs"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

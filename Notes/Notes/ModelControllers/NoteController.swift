@@ -12,7 +12,7 @@ class NoteController {
     
     var notes: [Note] = []
     
-    func newNote(with title: String, body: String) {
+    func createNote(with title: String, body: String) {
         let newNote = Note(title: title, body: body)
         notes.append(newNote)
     }
@@ -23,7 +23,7 @@ class NoteController {
     }
     
     func fetchNotes() {
-        
+        // Intentionally blank
     }
     
     func delete(note: Note) {
